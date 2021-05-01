@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+$heading:'Lato', sans-serif;
+$logo: 'Spartan', sans-serif;
+$body:'Ubuntu', sans-serif;
+$darkprimary:#D87C49;
+$primary:#D97E4A;
+$grey:#fafafa;
+$bg:#fafafa;
+$black:#0D0D0D;
+$text:#1A1A1A;
+$cardbg:rgba(128, 128, 128, 0.103);
+*{
+    font-family: $body;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $bg ;
+}
+.brand-logo{
+    font-family: $logo;
+    font-size:24px !important;
+  }
+  
+  nav{
+      
+      min-height: 10vh;
+      margin: 20px 0 !important;
+  }
+
+  
+.hero{
+    .col{
+        min-height: 80vh;
+ 
+    }
+    #hero-img{
+        background-position: center;
+        background-size: cover;
+        background-image: url('./images/hero.jpg');
+    }
+#hero-txt{
+    padding: 20px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    
+}
+p{
+    color: gray;
+    font-size: 18px;
+    width: 90%;
+    line-height: 150%;
+}
+
+.heading{
+    font-size: 62px !important;
+    font-weight: bold;
+    font-family: $heading;
+    margin: 25px 0;
+}
+    span{
+        opacity: .6;
+        font-weight: lighter;
+        color: white;
+       text-transform: capitalize;
+       font-size:20px;
+       line-height: 125%;
+       letter-spacing: 0.4em;
+        
+    }
+
+    width: 100%;
+    border: 1px solid 
+    #0D0D0D;
+    min-height: 100vh;
+    background-color: darken($color: #0D0D0D, $amount: .5);
+
+}
+
+
+.cta-button{
+    background-color: $primary;
+    border: none;
+    padding: 12px 30px;
+    color: white;
+    font-weight:bold !important ;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    margin: 30px 0;
+    text-align: center;
+    text-transform: capitalize !important;
+}
+
+
+// product container
+
+.product-container{
+    width: 100%;
+    margin: 10vh auto;
+    .p-card{
+        width: 90%;
+        height: auto !important;
+        padding: 20px;
+        border-radius: 12px;
+        background-color:$cardbg ;
+        text-align: center;
+        &:hover{
+            transition: 0.5s ease-in-out;
+            transform:scale(1.1,1.1);
+        }
+        img{
+            position: relative;
+           margin-top: -50%;
+            max-width: 100%;
+            object-fit: contain ;
+          height: 200px;
+            
+        }
+        h2{
+            margin: 20px auto;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: $heading;
+            text-transform: uppercase !important;
+        }
+        a{
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            i{
+                font-size: 20px;
+                color: rgb(255, 72, 72);
+            }
+            text-transform: uppercase;
+        }
+    }
+    .col{
+        
+        padding: 10px;
+        padding-top:20vh !important;
+    }
+   
+}
+
+
+.speaker-hero{
+    width: 100%;
+     padding: 0 10%;
+    margin: 10vh auto;
+    border-radius: 12px;
+    background-color: $primary;
+    .col{
+        padding: 10px;
+        min-height: 70vh;
+        padding: 20px;
+        display:flex;
+        justify-content:center;
+        align-items:flex-start;
+        color: whitesmoke;
+        flex-direction: column;
+    }
+    p{
+        width: 75%;
+        font-size: 18px;
+        opacity: .7;
+    }
+    h2{
+        font-size: 52px;
+        font-weight: bold;
+        font-family: $heading;
+    }
+    .cta-button{
+        text-transform: uppercase !important;
+        background-color: $black;
+        
+&:hover{
+    transition: .5s ease;
+    color: black;
+    background-color: lighten($color: white, $amount: 10) !important;
+    }
+        }
+img{
+    transform: scale(1.4,1.4);
+    max-width: 100%;
+
+}
+}
+
+
+.z-speaker{
+    margin: 10vh auto;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    border-radius: 12px;
+    min-height: 50vh;
+    background-image: url('./images/z7speaker.jpg');
+}
+
+.p-btn{
+    margin: 20px 0;
+    border: 1px solid black;
+    background-color: transparent ;
+    color: black;
+    font-size: 14px;
+    padding: 12px 30px;
+    &:hover{
+        transition: .3s ease;
+        background-color: $black;
+        color: white;
+    }
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $heading;
+
+}
+.p-heading{
+
+    font-size: 28px;
+    font-weight: bold;
+    font-family: $heading;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin: 20px 0;
+    span{
+        color: $primary;
+    }
+}
+
+.y-headphone{
+    width: 100%;
+    .y-card{
+        min-height: 300px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+        width: 90%;
+        background-color: $cardbg;
+        border-radius: 12px;
+        text-align: center;
+    
+    }
+    .img{
+        background-size: cover;
+        background-image: url('./images/pexels-soulful-pizza-3780681.jpg');
+    }
+}
+
+.exp-container{
+    margin: 15vh auto;
+    width: 100%;
+   .p-heading{
+       width: 80%;
+       line-height: 125%;
+   }
+   .col{
+    min-height: 70vh;
+    display: flex;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+    p{
+        color: grey;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 150%;
+        width: 80%;
+    }
+    .img{
+        background-size: cover;
+        background-position: bottom center;
+        background-image: url('./images/pexels-sound-on-3756752.jpg');
+    }
+}
+
+footer{
+    .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            font-size: 30px !important;
+            margin: 10px !important;
+        }
+        padding: 0 !important;
+    }
+    p{
+        opacity: .7;
+    }
+    color: white !important;
+    width: 100%;
+    min-height: 30vh;
+    background-color: $black;
+    padding: 20px 0;
+}
+@media screen and (max-width:718px) {
+    .hero {
+        .heading{
+            font-size: 32px !important;
+        }
+        .col{
+            min-height: 50vh;
+        }
+    }
+ 
+    .speaker-hero{
+        .col{
+            min-height: 50vh;
+            img{
+                transform:scale(1.7,1.7);
+            }
+        }
+    }
+    .product-container .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    * .row ,.row{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+}
+
+
+i{
+    vertical-align:top;
+}
