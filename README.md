@@ -12,3 +12,6 @@
 
 #admin login
 ![Screenshot_2021-05-02 Audiophile(2)](https://user-images.githubusercontent.com/53342781/116808169-fe7adf00-ab54-11eb-9b60-62ed61f3431e.png)
+
+#add product 
+![Screenshot_2021-05-02 Audiophile(4)](https://user-images.githubusercontent.com/53342781/116808262-7517dc80-ab55-11eb-892b-1cf470d6d7a0.png)
