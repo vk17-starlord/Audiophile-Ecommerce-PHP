@@ -20,7 +20,7 @@ require('adminconnection.php')
     <p>Enter Your Username</p>
     <input class="browser-default" type="text" name="Username" placeholder="user123">
     <p>Enter Your Password</p>
-    <input class="browser-default" type="text" name="Password" placeholder="user@23432">
+    <input class="browser-default" type="password" name="Password" placeholder="user@23432">
 <br>
     <button type="submit " name="login">Login</button>
     </form>

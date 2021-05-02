@@ -41,7 +41,7 @@ nav button {
 .hero #hero-img {
   background-position: center;
   background-size: cover;
-  background-image: url("./images/hero.jpg");
+  background-image: url("./static/hero.jpg");
 }
 
 .hero #hero-txt {
@@ -233,7 +233,7 @@ nav button {
           flex-direction: column;
   border-radius: 12px;
   min-height: 50vh;
-  background-image: url("./images/z7speaker.jpg");
+  background-image: url("./static/z7speaker.jpg");
 }
 
 .p-btn {
@@ -299,7 +299,7 @@ nav button {
 
 .y-headphone .img {
   background-size: cover;
-  background-image: url("./images/pexels-soulful-pizza-3780681.jpg");
+  background-image: url("./static/pexels-soulful-pizza-3780681.jpg");
 }
 
 .exp-container {
@@ -342,7 +342,7 @@ nav button {
 .exp-container .img {
   background-size: cover;
   background-position: bottom center;
-  background-image: url("./images/pexels-sound-on-3756752.jpg");
+  background-image: url("./static/pexels-sound-on-3756752.jpg");
 }
 
 footer {
@@ -412,4 +412,82 @@ i {
 
 nav {
   margin: 0 !important;
+}
+
+body {
+  background-color: #4639a2;
+}
+
+.dash, .main-container {
+  min-height: 95vh !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dash {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  color: white;
+}
+
+.dash button {
+  border: none !important;
+  color: white !important;
+  background: transparent !important;
+}
+
+.dash .links {
+  margin: 20vh auto;
+  width: 85%;
+}
+
+.dash .links li {
+  margin: 10px auto;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  padding-left: 20%;
+  border-radius: 12px;
+}
+
+.dash .links li:hover {
+  -webkit-transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: white;
+}
+
+.dash .links li:hover a, .dash .links li:hover button {
+  color: black !important;
+}
+
+.dash .links a, .dash .links button {
+  color: white;
+  font-size: 20px !important;
+}
+
+.dash .links a i, .dash .links button i {
+  vertical-align: middle;
+  padding-bottom: 5px;
+}
+
+.main-container {
+  border-radius: 20px 0 0 20px;
+  background-color: #fafafa;
+}
+
+.mainrow {
+  padding: 20px 0;
+  margin: 0;
 }

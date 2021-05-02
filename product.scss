@@ -94,10 +94,12 @@ flex-direction: column;
      font-weight: bold;
  }
  img{
-         max-width: 100%;
-     height: 75vh;
+        width: 100%;
+  object-fit: cover;
  }
  .img{
+     background-size: cover;
+     background-position: center;
      padding: 0 !important;
  }
  

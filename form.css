@@ -409,3 +409,116 @@ footer p {
 i {
   vertical-align: top;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.form-container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.form-container .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.form-container .img {
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1526708286628-e9e0b57f84fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80");
+}
+
+.form-container h2 {
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  margin: 20px auto;
+}
+
+.form-container p {
+  color: black;
+  font-size: 16px;
+  margin: 10px auto;
+}
+
+.form-container button {
+  padding: 12px 25px;
+  background-color: #D97E4A;
+  color: white;
+  border: none;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.form-container button i {
+  font-size: 20px;
+  padding: 0 5px;
+}
+
+.form-container form {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.form-container form textarea, .form-container form input {
+  width: 100%;
+  border-radius: 12p;
+  padding: 12px 5px !important;
+  border: none;
+  border-bottom: 1px solid black !important;
+  background-color: transparent;
+}
+
+.form-container form textarea::-webkit-input-placeholder, .form-container form input::-webkit-input-placeholder {
+  color: black;
+}
+
+.form-container form textarea:-ms-input-placeholder, .form-container form input:-ms-input-placeholder {
+  color: black;
+}
+
+.form-container form textarea::-ms-input-placeholder, .form-container form input::-ms-input-placeholder {
+  color: black;
+}
+
+.form-container form textarea::placeholder, .form-container form input::placeholder {
+  color: black;
+}
+
+.new-button {
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #D97E4A;
+  font-size: 16px;
+  color: #fff;
+}
+
+input[type="file"] {
+  position: absolute;
+  z-index: -1;
+  top: 6px;
+  visibility: hidden;
+  left: 0;
+  font-size: 15px;
+  color: #999999;
+}
+
+.button-wrap {
+  position: relative;
+}

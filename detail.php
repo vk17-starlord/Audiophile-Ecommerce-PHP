@@ -10,22 +10,34 @@
 <link rel="stylesheet" href="./product.css">
 </head>
 <body>
+
+<?php
+
+$pdo= new PDO('mysql:host=localhost;port=3306;dbname=audiophile','root','');
+$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+$id=$_GET['id'] ?? null;
+if(isset($id)){
+    
+$stmt=$pdo->query("SELECT * FROM `products` WHERE `id`='$id'");
+$CurrentProduct = $stmt->fetch();
+// var_dump($CurrentProduct);
+}
+?>
 <div class="product-detail-container">
 <div class="container">
 
 <div class="product-card row">
 
-<div class="col s12 l5 m7 img">
-    <img src="./images/hero.jpg" alt="">
+<div class="col s12 l5 m7 img" style="background-image:url('<?php echo $CurrentProduct['image'] ?>')">
 </div>
 <div class="col s12 l7 m5">
-    <h2>XX99 MARK II HEADPHONES <br>    <span>Speaker</span>
+    <h2><?php echo $CurrentProduct['title'] ?> <br>    <span><?php echo $CurrentProduct['category'] ?></span>
  </h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse vitae deserunt repellat iste? Voluptatum, eveniet nulla saepe unde at nobis suscipit voluptatibus eaque alias fugiat.</p>
 
-    <p id="price"> 200 ₹</p>
+<p><?php echo $CurrentProduct['description'] ?></p>
+    <p id="price"> <?php echo $CurrentProduct['price'] ?></p>
 
-    <p>Qty <input type="number" maxlength="10" value="1"> </p>
+    <p>Qty <input type="number" maxlength="10" min="1" max="<?php echo $CurrentProduct['copies'] ?>" value="1"> </p>
     <div style="width:80%">
 
     <button data-target="slide-out" class="sidenav-trigger ">Add to Cart <i class='bx bxs-cart-alt'></i></button> 

@@ -1,6 +1,72 @@
 @import './main.scss';
-
+$purple:rgb(70,57,162);
 nav{
     margin: 0 !important;
+}
+
+body{
+    background-color: $purple;
+}
+
+.dash,.main-container{
+    min-height: 95vh !important;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+.dash{
+    justify-content: flex-start !important;
+color: white;
+button{
+    border: none !important;
+    color: white !important;
+    background: transparent !important;
+    
+}
+.links{
+    margin: 20vh auto;
+    width: 85%;
+
+
+    li{
+        margin: 10px auto;
+        width: 100%;
+
+        padding: 10px ;
+        text-align: left;
+        padding-left: 20%;
+border-radius: 12px;
+        &:hover{
+            transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            background-color: white;
+            a,button{
+                color: black !important;
+            }
+        }
+    }
+ 
+        a,button{
+        color: white;
+        i{
+            vertical-align: middle;
+            padding-bottom: 5px;
+        }
+        font-size: 20px !important;
+    }
+ 
+}
+}
+
+.main-container{
+    border-radius: 20px 0 0 20px;
+    background-color: $bg;
+}
+.mainrow{
+    padding: 20px 0;
+    margin: 0;
+
+
 }
 

@@ -43,7 +43,7 @@ body{
     #hero-img{
         background-position: center;
         background-size: cover;
-        background-image: url('./images/hero.jpg');
+        background-image: url('./static/hero.jpg');
     }
 #hero-txt{
     padding: 20px;
@@ -208,7 +208,7 @@ img{
     flex-direction: column;
     border-radius: 12px;
     min-height: 50vh;
-    background-image: url('./images/z7speaker.jpg');
+    background-image: url('./static/z7speaker.jpg');
 }
 
 .p-btn{
@@ -261,7 +261,7 @@ img{
     }
     .img{
         background-size: cover;
-        background-image: url('./images/pexels-soulful-pizza-3780681.jpg');
+        background-image: url('./static/pexels-soulful-pizza-3780681.jpg');
     }
 }
 
@@ -291,7 +291,7 @@ img{
     .img{
         background-size: cover;
         background-position: bottom center;
-        background-image: url('./images/pexels-sound-on-3756752.jpg');
+        background-image: url('./static/pexels-sound-on-3756752.jpg');
     }
 }
 

@@ -19,7 +19,12 @@ body {
 
 nav {
   min-height: 10vh;
-  margin: 20px 0 !important;
+  margin: 20px 0;
+  padding: 10px !important;
+}
+
+nav button {
+  margin: 10px !important;
 }
 
 .hero {
@@ -36,7 +41,7 @@ nav {
 .hero #hero-img {
   background-position: center;
   background-size: cover;
-  background-image: url("./images/hero.jpg");
+  background-image: url("./static/hero.jpg");
 }
 
 .hero #hero-txt {
@@ -228,7 +233,7 @@ nav {
           flex-direction: column;
   border-radius: 12px;
   min-height: 50vh;
-  background-image: url("./images/z7speaker.jpg");
+  background-image: url("./static/z7speaker.jpg");
 }
 
 .p-btn {
@@ -294,7 +299,7 @@ nav {
 
 .y-headphone .img {
   background-size: cover;
-  background-image: url("./images/pexels-soulful-pizza-3780681.jpg");
+  background-image: url("./static/pexels-soulful-pizza-3780681.jpg");
 }
 
 .exp-container {
@@ -337,7 +342,7 @@ nav {
 .exp-container .img {
   background-size: cover;
   background-position: bottom center;
-  background-image: url("./images/pexels-sound-on-3756752.jpg");
+  background-image: url("./static/pexels-sound-on-3756752.jpg");
 }
 
 footer {
@@ -516,11 +521,14 @@ i {
 }
 
 .product-card img {
-  max-width: 100%;
-  height: 75vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .product-card .img {
+  background-size: cover;
+  background-position: center;
   padding: 0 !important;
 }
 

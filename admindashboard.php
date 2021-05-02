@@ -12,20 +12,30 @@
 <body>
 <?php
 require('adminconnection.php');
-session_start();
-$admin=$_SESSION['Adminlogin'];
-
-
-if(!isset($admin)){
-    header('location:index.php');
-}
-
+require('checkifadmin.php');
 if(isset($_POST['logout'])){
     session_destroy();
     header('location:index.php');
 }
 ?>
 
+<div class="row mainrow">
+    <div class="col s12 l2 m5 dash">
+        <h2 class="brand-logo">audiophile</h2>
+
+        <ul class="links">
+
+<li><a href=""><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+<li><a href="./createproduct.php"><i class='bx bxs-layer-plus' ></i> Add Product</a></li>
+<li><form action="" method="POST">
+<button  name="logout" ><i class='bx bx-log-out-circle' ></i> Logout</button>
+</form></li>
+     
+</ul>
+    </div>
+    <div class="col s12 l10 m7 main-container"></div>
+
+</div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
