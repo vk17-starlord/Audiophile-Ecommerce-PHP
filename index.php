@@ -25,17 +25,20 @@
         <li><a id="speakers-section" >Speakers</a></li>
         <li><a id="earphones-section" >Earphones</a></li>
         <li><a href="./cart.php"><i class='bx bxs-cart-alt'></i></a></li>
+     <li><a href="./adminlogin.php"><i class='bx bxs-user'></i></a></li>
       </ul>
     </div>
   </nav>
 
   <ul class="sidenav" id="mobile-demo">
+
   <li><a id="home-section" >Home</a></li>
-       
+        <li><a id="headphones-section" >Headphones</a></li>
         <li><a id="speakers-section" >Speakers</a></li>
         <li><a id="earphones-section" >Earphones</a></li>
         <li><a href="./cart.php"><i class='bx bxs-cart-alt'></i></a></li>
-  </ul>
+     <li><a href="./adminlogin.php"><i class='bx bxs-user'></i></a></li>
+     </ul>
 
 
   <div class="row">
@@ -148,11 +151,13 @@
       <i class='bx bx-menu-alt-left'></i>
       </a>
       <ul class="right hide-on-med-and-down">
-        <li><a id="home-section" >Home</a></li>
-       
+      <li><a id="home-section" >Home</a></li>
+        <li><a id="headphones-section" >Headphones</a></li>
         <li><a id="speakers-section" >Speakers</a></li>
         <li><a id="earphones-section" >Earphones</a></li>
-        <li><a href=""><i class='bx bxs-cart-alt'></i></a></li>
+        <li><a href="./cart.php"><i class='bx bxs-cart-alt'></i></a></li>
+     <li><a href="./adminlogin.php"><i class='bx bxs-user'></i></a></li>
+     
       </ul>
     </div>
   </nav>  

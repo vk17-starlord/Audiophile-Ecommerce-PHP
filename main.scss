@@ -27,7 +27,11 @@ body{
   nav{
       
       min-height: 10vh;
-      margin: 20px 0 !important;
+      margin: 20px 0 ;
+      padding: 10px !important;
+      button{
+          margin: 10px !important;
+      }
   }
 
   
