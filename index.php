@@ -24,7 +24,7 @@
         <li><a id="headphones-section" >Headphones</a></li>
         <li><a id="speakers-section" >Speakers</a></li>
         <li><a id="earphones-section" >Earphones</a></li>
-        <li><a href=""><i class='bx bxs-cart-alt'></i></a></li>
+        <li><a href="./cart.php"><i class='bx bxs-cart-alt'></i></a></li>
       </ul>
     </div>
   </nav>
@@ -34,7 +34,7 @@
        
         <li><a id="speakers-section" >Speakers</a></li>
         <li><a id="earphones-section" >Earphones</a></li>
-        <li><a href=""><i class='bx bxs-cart-alt'></i></a></li>
+        <li><a href="./cart.php"><i class='bx bxs-cart-alt'></i></a></li>
   </ul>
 
 
@@ -45,7 +45,9 @@
   XX99 MARK II HEADPHONES
   </h1>
   <p>Experience natural , lifelike audio and exceptional build quality made for the passionate enthusiast</p>
+ <a href="./detail.php">
   <button class="cta-button">SEE PRODUCT <i class='bx bx-caret-right'></i></button>
+ </a>
   </div>
   <div class="col s12 m12 l6" id="hero-img">
   </div>
@@ -89,8 +91,10 @@
 <div class="speaker-hero row">
 <div class="col s12 m6 l6 text">
     <h2 class="heading">ZX9 <br> Speaker </h2>
-    <p>Upgrade to premium speaker that are phenomenally built to deliver truly remarkable sound</p>
+<p> to premium speaker that are phenomenally built to deliver truly remarkable sound</p>
+<a href="./detail.php">
 <button class="cta-button">SEE product</button>
+</a>
 </div>
 <div class="col s12 m6 l6 img">
 <img src="./images/speakerpremium.webp" alt="">
@@ -99,7 +103,11 @@
 
 <div class="z-speaker">
     <div class="p-heading">Z x speaker</div>
+    <a href="./detail.php">
+
     <button class="p-btn">see product</button>
+
+   </a>
 </div>
 
 <div class="y-headphone row">
@@ -109,7 +117,11 @@
 <div class="col s12 l6 m6">
     <div class="y-card">
     <h2 class="p-heading">YX1 Speaker</h2>
+    <a href="./detail.php">
+
     <button class="p-btn">see product</button>
+
+   </a>
     </div>
 </div>
 
