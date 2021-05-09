@@ -39,11 +39,12 @@ $YX1Speaker= $stmt->fetch();
       <i class='bx bx-menu-alt-left'></i>
       </a>
       <ul class="right hide-on-med-and-down">
-        <li><a id="home-section" >Home</a></li>
-        <li><a id="headphones-section" >Headphones</a></li>
-        <li><a id="speakers-section" >Speakers</a></li>
-        <li><a id="earphones-section" >Earphones</a></li>
+      <li><a id="home-section" href="./index.php" >Home</a></li>
+        <li><a id="headphones-section"  href="./products.php?category=headphone">Headphones</a></li>
+        <li><a id="speakers-section"  href="./products.php?category=speaker">Speakers</a></li>
+        <li><a id="earphones-section"  href="./products.php?category=earphones">Earphones</a></li>
         <li><a href="./cart.php"><i class='bx bxs-cart-alt'></i></a></li>
+         <li><a href="./cart.php"><i class='bx bxs-cart-alt'></i></a></li>
      <li><a href="./adminlogin.php"><i class='bx bxs-user'></i></a></li>
       </ul>
     </div>
@@ -52,9 +53,12 @@ $YX1Speaker= $stmt->fetch();
   <ul class="sidenav" id="mobile-demo">
 
   <li><a id="home-section" >Home</a></li>
-        <li><a id="headphones-section" >Headphones</a></li>
-        <li><a id="speakers-section" >Speakers</a></li>
-        <li><a id="earphones-section" >Earphones</a></li>
+  <li><a id="home-section" href="./index.php" >Home</a></li>
+        <li><a id="headphones-section"  href="./products.php?category=headphone">Headphones</a></li>
+        <li><a id="speakers-section"  href="./products.php?category=speaker">Speakers</a></li>
+        <li><a id="earphones-section"  href="./products.php?category=earphones">Earphones</a></li>
+        <li><a href="./cart.php"><i class='bx bxs-cart-alt'></i></a></li>
+  
         <li><a href="./cart.php"><i class='bx bxs-cart-alt'></i></a></li>
      <li><a href="./adminlogin.php"><i class='bx bxs-user'></i></a></li>
      </ul>
@@ -97,14 +101,14 @@ $YX1Speaker= $stmt->fetch();
 <div class="p-card">
 <img src="./static/headphone1.png" alt="">
 <h2>HEADPHONES</h2>
-<a href="./products.php?category=headphones">shop <i class='bx bx-chevron-right'></i></a>
+<a href="./products.php?category=headphone">shop <i class='bx bx-chevron-right'></i></a>
 </div>
 </div>
 <div class="col s12 m6 l4">
 <div class="p-card">
 <img src="./static/speaker.png" alt="">
 <h2>speaker</h2>
-<a href="./products.php?category=speakers">shop <i class='bx bx-chevron-right'></i></a>
+<a href="./products.php?category=speaker">shop <i class='bx bx-chevron-right'></i></a>
 </div>
 </div>
 

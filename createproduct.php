@@ -80,8 +80,12 @@ return $str;
 
     
     <p>Product category</p>
-    <input class="browser-default" type="text" name="category" placeholder="category" required>
+<select name="category" id="">
+    <option value="headphone">Headphone</option>
+    <option value="earphones">Earphone</option>
+    <option value="speakers">Speaker</option>
 
+</select>
     
     <p>Product image</p>
  

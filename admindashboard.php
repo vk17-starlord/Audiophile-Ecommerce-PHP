@@ -47,25 +47,38 @@ $products = $stmt->fetchAll();
     </div>
     <div class="col s12 l10 m7 main-container">
     
-    <div class="row main-row">
-    <?php foreach ($products as $i=> $product):?>
-    <div class="col s12 l4 m4">
-    <div class="p-card">
-        <div class="img">
-        <img src="<?php echo $product['image'] ?>" alt="">
-        </div>
-    <h2><?php echo $product['title'] ?></h2>
-    <p><span>Price : <?php echo $product['price'] ?> ₹</span></p>
-    <div class="btn-container" style="width:80%;">
-    <a href="./edit.php?id=<?php echo $product['id'] ?>" class="waves-effect  indigo darken-1 waves-light btn"><i class='bx bxs-edit-alt'></i> Edit </a>
-    <a href="./delete.php?id=<?php echo $product['id'] ?>" class=" indigo darken-1 waves-effect waves-light btn"><i class='bx bxs-trash-alt' ></i> Delete  </a>
+    <table>
+        <thead>
+          <tr>
+              <th>Image</th>
+              <th> Name</th>
+              <th> Category</th>
+              <th> Description</th>
+              <th> Quantity</th>
+              <th> Price</th>
 
-    </div>
-    </div>
-    </div>
+          </tr>
+        </thead>
+        <?php foreach ($products as $i=> $product):?>
+            <tr>
+            <td><img class="materialboxed" src="<?php echo $product['image'] ?>" alt=""></td>
+            <td><div class="title"><?php echo $product['title'] ?> </div></td>
+            <td><div class="category"><p><?php echo $product['category'] ?></p> </div></td>
+            <td><div class="desc"><p><?php echo substr($product['description'],0,100) ?></p> </div></td>
+            <td><div><span class="new indigo darken-3 badge" data-badge-caption=""><?php echo $product['copies'] ?></span> </div></td>
+            <td><div><?php echo '₹'.$product['price'] ?> </div></td>
+<td><div> <a class="waves-effect orange darken-1 waves-light  z-depth-0 btn" href="./edit.php?id=<?php echo $product['id'] ?>">Edit</a></div></td>
+<td><div> <a class="waves-effect red darken-1 waves-light  z-depth-0 btn" href="./delete.php?id=<?php echo $product['id'] ?>">Delete</a></div></td>
+
+</tr>
     <?php endforeach ?>
 
-</div>
+        <tbody>
+          
+        </tbody>
+      </table>
+  
+
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

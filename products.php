@@ -10,10 +10,30 @@
 <link rel="stylesheet" href="./Shop.css">
 </head>
 <body>
+<?php
 
+$pdo= new PDO('mysql:host=localhost;port=3306;dbname=audiophile','root','');
+$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-   <div class="shop-container">
-   
+$category=$_GET['category']??null;
+$stmt = $pdo->prepare( "SELECT * FROM products WHERE `category`='$category'");
+
+$stmt->execute();
+$products = $stmt->fetchAll();
+?>
+<?php require('header.php') ?>
+   <div class="shop-container row">
+   <?php foreach ($products as $i=> $product):?>
+     <div class="col l4 m4 s12">
+<div class="inner-card">
+<img class="materialboxed" src="<?php echo $product['image'] ?>" alt="">
+
+<h2 class="title"><?php echo $product['title'] ?></h2>
+<h4>Price : <span><?php echo $product['price'] ?></span>
+<a class="waves-effect waves-light btn indigo darken-3" href="./detail.php?id=<?php echo $product['id'] ?>">View </a></h4>
+</div>
+     </div>
+     <?php endforeach ?>
    </div> 
 
     

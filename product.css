@@ -525,14 +525,8 @@ i {
   font-weight: bold;
 }
 
-.product-card img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .product-card .img {
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   padding: 0 !important;
 }
@@ -698,11 +692,4 @@ i {
 .order #head {
   color: grey;
   text-transform: uppercase;
-}
-
-.shop-container {
-  width: 75%;
-  margin: 0 auto;
-  min-height: 100vh;
-  border: 1px solid red;
 }

@@ -11,6 +11,7 @@
 
 }
 
+
 .product-card{
 margin: 10vh auto;
     width: 100%;
@@ -93,13 +94,10 @@ flex-direction: column;
      color: $primary;
      font-weight: bold;
  }
- img{
-        width: 100%;
-  object-fit: cover;
- }
+
  
  .img{
-     background-size: cover;
+     background-size: contain;
      background-position: center;
      padding: 0 !important;
  }
@@ -242,9 +240,3 @@ text-transform: uppercase;
 
 
 // shop container
-.shop-container{
-    width: 75%;
-    margin: 0 auto;
-    min-height: 100vh;
-    border: 1px solid red;
-}
