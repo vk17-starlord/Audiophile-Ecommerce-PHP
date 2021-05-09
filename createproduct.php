@@ -54,7 +54,9 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
    
         $statement->execute(); 
       echo"<script>alert('added product successfully')</script>";
-            }
+      header('location:admindashboard.php');
+        
+    }
 }
 
 function randomString($n){

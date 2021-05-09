@@ -1,0 +1,6 @@
+.shop-container {
+  width: 75%;
+  margin: 0 auto;
+  min-height: 100vh;
+  border: 1px solid red;
+}

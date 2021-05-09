@@ -20,10 +20,16 @@ if(isset($id)){
     
 $stmt=$pdo->query("SELECT * FROM `products` WHERE `id`='$id'");
 $CurrentProduct = $stmt->fetch();
-// var_dump($CurrentProduct);
+if(!$CurrentProduct){
+    header('location:index.php');
+}
+   
+}else{
+    header('location:index.php');
 }
 ?>
-<div class="product-detail-container">
+
+<div class="product-detail-container" >
 <div class="container">
 
 <div class="product-card row">

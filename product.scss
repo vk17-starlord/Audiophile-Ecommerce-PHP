@@ -97,6 +97,7 @@ flex-direction: column;
         width: 100%;
   object-fit: cover;
  }
+ 
  .img{
      background-size: cover;
      background-position: center;
@@ -237,4 +238,13 @@ text-transform: uppercase;
         color: grey;
         text-transform: uppercase;
     }
+}
+
+
+// shop container
+.shop-container{
+    width: 75%;
+    margin: 0 auto;
+    min-height: 100vh;
+    border: 1px solid red;
 }

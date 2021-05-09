@@ -90,21 +90,21 @@ $YX1Speaker= $stmt->fetch();
 <div class="p-card">
 <img src="./static/earphones.png" alt="">
 <h2>EARPHONES</h2>
-<a href="">shop <i class='bx bx-chevron-right'></i></a>
+<a href="./products.php?category=earphones">shop <i class='bx bx-chevron-right'></i></a>
 </div>
 </div>
 <div class="col s12 m6 l4">
 <div class="p-card">
 <img src="./static/headphone1.png" alt="">
 <h2>HEADPHONES</h2>
-<a href="">shop <i class='bx bx-chevron-right'></i></a>
+<a href="./products.php?category=headphones">shop <i class='bx bx-chevron-right'></i></a>
 </div>
 </div>
 <div class="col s12 m6 l4">
 <div class="p-card">
 <img src="./static/speaker.png" alt="">
 <h2>speaker</h2>
-<a href="">shop <i class='bx bx-chevron-right'></i></a>
+<a href="./products.php?category=speakers">shop <i class='bx bx-chevron-right'></i></a>
 </div>
 </div>
 
@@ -199,6 +199,7 @@ $YX1Speaker= $stmt->fetch();
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
 M.AutoInit();
+
 </script>
 </body>
 </html>

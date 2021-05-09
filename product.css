@@ -410,6 +410,11 @@ i {
   vertical-align: top;
 }
 
+.sidenav {
+  background-color: #0D0D0D !important;
+  color: white !important;
+}
+
 .product-detail-container {
   width: 100%;
   background-color: #fafafa !important;
@@ -693,4 +698,11 @@ i {
 .order #head {
   color: grey;
   text-transform: uppercase;
+}
+
+.shop-container {
+  width: 75%;
+  margin: 0 auto;
+  min-height: 100vh;
+  border: 1px solid red;
 }
